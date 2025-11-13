@@ -1,0 +1,19 @@
+body{
+	background-color: #3D3D3D;
+	height: auto;
+}
+#header{
+	width: 100%;
+}
+.menu{
+  	  font-family: 'Permanent Marker', cursive;
+      font-size: 28px;
+	  text-align: center;
+}
+a{
+	color: #FFFFFF;
+}
+h1, h3{
+	color: #9F9F9F;
+	text-align: center;
+}
