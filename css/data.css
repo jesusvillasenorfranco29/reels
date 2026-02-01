@@ -1,0 +1,50 @@
+body{
+	background-color: #3D3D3D;
+	height: auto;
+}
+#header{
+	width: 100%;
+}
+.menu{
+  	  font-family: 'Permanent Marker', cursive;
+      font-size: 28px;
+	  text-align: center;
+	  list-style: none;
+	  padding: 20px;  
+}
+.menu li{
+	  position: relative;
+	  display: inline-block;
+}
+.menu li:hover ul{
+	  display: block;
+}
+.menu ul{
+	  display: none;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+}
+.menu ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+.menu li a{
+	text-decoration: none;
+	padding: 10px;
+}
+a{
+	color: #FFFFFF;
+}
+h1, h3{
+	color: #9F9F9F;
+	text-align: center;
+}
+.tag{font-weight:600;display:inline-block;vertical-align:top;text-transform:uppercase;font-size:0.6875rem;color:inherit;border:solid 0.0625rem currentColor;padding:0.375rem 0.9375rem;border-radius:0.125rem}
+.tag-list{font-size:0;margin-left:-0.3125rem}
+.tag-list 
+.tag{margin-left:0.3125rem;margin-right:0.3125rem;margin-bottom:0.625rem}
+.tag-list{
+	text-align: center;
+}
