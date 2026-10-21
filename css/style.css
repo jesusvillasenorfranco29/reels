@@ -1,0 +1,260 @@
+/* RESET GENERAL Y FUENTES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a; /* Fondo oscuro moderno */
+    color: #E0E0E0;
+    font-family: 'Montserrat', sans-serif; /* Tipografía limpia para lectura */
+    line-height: 1.6;
+    padding-top: 80px; /* Espacio para el menú fijo superior */
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00ADB5; /* Color acento profesional al pasar el mouse */
+}
+
+/* MENÚ DE NAVEGACIÓN FIJO SUPERIOR */
+#header-nav {
+    background-color: #222831;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.menu {
+    font-family: 'Permanent Marker', cursive; /* Mantenemos tu toque artístico aquí */
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    padding: 15px 0;  
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu li a {
+    padding: 10px 15px;
+}
+
+/* Menú Desplegable */
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #393E46;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+    margin: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 12px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ENCABEZADO DE PERFIL (Hero) */
+#hero-header {
+    background-image: url("media/1bg_web.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ADB5;
+}
+
+.profile-text {
+    text-align: left;
+}
+
+.profile-text h1 {
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.profile-text h3 {
+    font-size: 1.2rem;
+    color: #00ADB5;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* PORTFOLIO GRID DE 2 COLUMNAS */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.project-card {
+    background-color: #222831;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: 1px solid #333;
+}
+
+/* Contenedor del video con relación de aspecto 16:9 */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h2 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #00ADB5;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #B2B2B2;
+}
+
+/* SECCIÓN DE SKILLS / HABILIDADES */
+.skills-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skills-section h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.tag-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #00ADB5;
+    border: solid 2px #00ADB5;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(0, 173, 181, 0.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.linkedin-icon {
+    width: 35px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.linkedin-icon:hover {
+    opacity: 1;
+}
+
+/* RESPONSIVO PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .profile-box {
+        text-align: center;
+        flex-direction: column;
+    }
+    .profile-text {
+        text-align: center;
+    }
+    .profile-text h3 {
+        text-align: center;
+    }
+}

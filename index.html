@@ -1,58 +1,101 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>index</title>
-	<link rel="shortcut icon" href="media/logo.ico">
-	<link href="css/data.css" rel="stylesheet" type="text/css">
-	<link href="css/media.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Villaseñor | Portfolio</title>
+    <!-- Fuentes profesionales integradas desde Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="header"><img id="image" src="media/1logo_web.png"/></div>
-	<br>
-	<table>
-  <tr>
-    <th><a text-align="center" href="site/dream.html">Dream</a><iframe title="vimeo-player" src="https://player.vimeo.com/video/1237767643?h=dac8567782" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"  allowfullscreen></iframe><br>A perfect day at the beach. It's about being in a place that feels perfect to you, at the perfect time, doing what you love. My dream one day is to have that motorcycle I've always wanted, doing what I love most — modeling environments — and my plan is to apply to Disney Animation Internships.</th>
-    <th><a text-align="center" href="site/particles.html">Particles</a><iframe title="vimeo-player" src="https://player.vimeo.com/video/1132813520?h=106402c7d7" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"  allowfullscreen></iframe><br>This environment is based on the main streets of my hometown, Tepatitlán de Morelos. Many of the facades are from real houses in Tepatitlán. This class project represents an incredible challenge for me — unlike my classmates, I built the entire environment from scratch, from the props to the houses. To finish, I added water and fire to the street lamps. The main challenge was creating the particle effects.</th>
-  </tr>
-</table>
-<ul class="menu">
-    <li><a href="index.html">Contact</a></li>
 
-    <li>
-        <a href="#">University Works</a>
-        <ul>
-            <li><a href="site/particles.html">Particles</a></li>
+    <!-- MENÚ EN LA PARTE SUPERIOR (Fijo para fácil acceso) -->
+    <header id="header-nav">
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li>
+                <a href="#">University Works ▾</a>
+                <ul>
+                    <li><a href="#particles">Particles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">My Own Works ▾</a>
+                <ul>
+                    <li><a href="#dream">Dream</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </li>
+    </header>
 
-    <li>
-        <a href="#">My Own Works</a>
-        <ul>
-            <li><a href="site/dream.html">Dream</a></li>
-        </ul>
-    </li>
-</ul>
-<div>
-		<h1>Jesus Villaseñor</h1>
-		<h3>Im Enviroment Artist</h3>
-</div>
-<div><a href="https://www.linkedin.com/in/jesus-villase%C3%B1or-franco-06aa592b5/" title="Linkedin" target="_blank"><img class="linkedin" src="media/Linkedin.webp" width="20%"/></a>
-	<br><br><br><br><br><br>
-</div>
-	<h3>Skills</h3>
-<div class="tag-list">
-	<span class="tag">3D Modeling</span>
-	<span class="tag">Environment Design</span>
-	<span class="tag">Prop Modeling</span>
-		<br>
-	<span class="tag">Character Modeling</span>
-	<span class="tag">Texturing</span>
-	<span class="tag">3D Animation</span>
-</div>
+    <!-- SECCIÓN PRINCIPAL / REEL -->
+    <main class="container">
+        <header id="hero-header">
+            <div class="profile-box">
+                <!-- Tu foto de perfil va aquí -->
+                <img src="media/tu_foto.png" alt="Jesus Villaseñor" class="profile-img">
+                <div class="profile-text">
+                    <h1>Jesus Villaseñor Franco</h1>
+                    <h3>Environment Artist</h3>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE PROYECTOS / VIDEOS (Alineados en Grid de 2 columnas) -->
+        <section class="portfolio-grid">
+            
+            <!-- PROYECTO 1: DREAM -->
+            <div id="dream" class="project-card">
+                <div class="video-wrapper">
+                    <!-- Parámetros añadidos (?title=0&byline=0&portrait=0) para ocultar textos nativos de Vimeo -->
+                    <iframe src="https://vimeo.com" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h2>Dream</h2>
+                    <p>A perfect day at the beach. It's about being in a place that feels perfect to you, at the perfect time, doing what you love. My dream one day is to have that motorcycle I've always wanted, doing what I love most — <strong>modeling environments</strong> — and my plan is to apply to Disney Animation Internships.</p>
+                </div>
+            </div>
+
+            <!-- PROYECTO 2: PARTICLES -->
+            <div id="particles" class="project-card">
+                <div class="video-wrapper">
+                    <iframe src="https://vimeo.com" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h2>Particles</h2>
+                    <p>This environment is based on the main streets of my hometown, Tepatitlán de Morelos. Many of the facades are from real houses in Tepatitlán. This class project represents an incredible challenge for me — unlike my classmates, I built the <strong>entire environment from scratch</strong>, from the props to the houses. To finish, I added water and fire to the street lamps. The main challenge was creating the <strong>particle effects</strong>.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN DE SKILLS -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="tag-list">
+                <span class="tag">3D Modeling</span>
+                <span class="tag">Environment Design</span>
+                <span class="tag">Prop Modeling</span>
+                <span class="tag">Character Modeling</span>
+                <span class="tag">Texturing</span>
+                <span class="tag">3D Animation</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (Contacto) -->
+    <footer id="contact">
+        <p>© 2026 Jesus Villaseñor - Environment Artist</p>
+        <div class="social-links">
+            <a href="TU_LINKEDIN_AQUI" target="_blank">
+                <img src="media/linkedin_icon.png" alt="LinkedIn" class="linkedin-icon">
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
-
-
