@@ -91,7 +91,7 @@ a:hover {
 
 /* ENCABEZADO DE PERFIL (Hero) */
 #hero-header {
-    background-image: url("media/1bg_web.png");
+    background-image: url("../media/1bg_web.jpg"); /* Cambiado a .jpg y con ../ para salir de la carpeta css */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -99,6 +99,7 @@ a:hover {
     margin-bottom: 40px;
     border: 1px solid #333;
 }
+
 
 .profile-box {
     display: flex;
