@@ -1,3 +1,22 @@
+#image {
+    width: auto;      /* Hace que tu logo transparente mantenga sus proporciones */
+    max-height: 80%;  /* Evita que el logo sea más alto que el banner */
+    display: block;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    /* Apunta a tu banner oscuro con tu foto integrada */
+    background-image: url("../media/1bg_web.jpg");
+    background-repeat: no-repeat;
+    position: static;
+    background-position: center;
+    background-size: cover;
+    height: 300px; /* Le da la altura para que luzca tu banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* RESET GENERAL Y FUENTES */
 * {
     box-sizing: border-box;

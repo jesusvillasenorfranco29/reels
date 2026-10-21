@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesus Villaseñor | Portfolio</title>
+    <!-- Fuentes profesionales integradas desde Google Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Ruta apuntando a tu carpeta css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- MENÚ SUPERIOR -->
+    <!-- MENÚ EN LA PARTE SUPERIOR (Fijo y adaptativo) -->
     <header id="header-nav">
         <ul class="menu">
             <li><a href="#hero-header">About</a></li>
             <li>
                 <a href="#">University Works ▾</a>
                 <ul>
-                    <!-- Ruta corregida apuntando hacia tu carpeta 'site' -->
                     <li><a href="site/particles/particles.html">Particles</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">My Own Works ▾</a>
                 <ul>
-                    <!-- Ruta corregida apuntando hacia tu carpeta 'site' -->
                     <li><a href="site/dream/dream.html">Dream</a></li>
                 </ul>
             </li>
@@ -33,29 +33,21 @@
         </ul>
     </header>
 
+    <!-- CONTENEDOR PRINCIPAL -->
     <main class="container">
         
+ <div id="header">
+        <img id="image" src="media/1logo_web.png" alt="Jesus Villaseñor" />
+    </div>
 
-        <header id="hero-header">
-            <div class="profile-box">
-                <!-- Ruta exacta a tu imagen de la J blanca con fondo negro -->
-                <img src="media/logo.jpg" class="profile-img">
-                <div class="profile-text">
-                    <h1>Jesus Villaseñor Franco</h1>
-                    <h3>Environment Artist</h3>
-                </div>
-            </div>
-        </header>
-
-
-        <!-- SECCIÓN DE PROYECTOS (Videos corregidos con la sintaxis exacta de Vimeo) -->
+        <!-- SECCIÓN DE PROYECTOS / VIDEOS (Tus enlaces originales de Vimeo) -->
         <section class="portfolio-grid">
             
             <!-- PROYECTO 1: DREAM -->
             <div id="dream" class="project-card">
                 <div class="video-wrapper">
-                    <!-- Sintaxis corregida uniendo el token de privacidad y los parámetros de limpieza -->
-                    <iframe src="https://player.vimeo.com/video/1237767643?h=dac8567782" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen></iframe>
+                    <!-- Tu enlace original e intacto adaptado a la pantalla -->
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1237767643?h=dac8567782" width="100%" height="100%" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
                     <h2>Dream</h2>
@@ -66,8 +58,8 @@
             <!-- PROYECTO 2: PARTICLES -->
             <div id="particles" class="project-card">
                 <div class="video-wrapper">
-                    <!-- Sintaxis corregida uniendo el token de privacidad y los parámetros de limpieza -->
-                    <iframe src="https://player.vimeo.com/video/1132813520?h=106402c7d7" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen></iframe>
+                    <!-- Tu enlace original e intacto adaptado a la pantalla -->
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1132813520?h=106402c7d7" width="100%" height="100%" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
                     <h2>Particles</h2>
@@ -91,11 +83,12 @@
         </section>
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer id="contact">
         <p>© 2026 Jesus Villaseñor - Environment Artist</p>
         <div class="social-links">
             <a href="#" target="_blank">
-                <!-- Corregido a .jpg según tu carpeta media -->
+                <!-- Apunta a tu icono linkedin.jpg dentro de media -->
                 <img src="media/linkedin.jpg" alt="LinkedIn" class="linkedin-icon" style="width: 35px; opacity: 0.7;">
             </a>
         </div>
@@ -103,3 +96,4 @@
 
 </body>
 </html>
+
