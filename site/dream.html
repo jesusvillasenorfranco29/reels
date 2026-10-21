@@ -1,43 +1,68 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<title>index</title>
-	<link rel="shortcut icon" href="../media/logo.ico">
-	<link href="../css/data.css" rel="stylesheet" type="text/css">
-	<link href="../css/media.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream - Jesus Villaseñor</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
-	<div id="header"><img id="image" src="../media/1logo_web.png"/></div>
-	<br>
-	
-<ul class="menu">
-    <li><a href="../index.html">Contact</a></li>
 
-    <li>
-        <a href="#">University Works</a>
-        <ul>
-            <li><a href="particles.html">Particles</a></li>
+    <!-- MENÚ SUPERIOR -->
+    <header id="header-nav">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">University Works ▾</a>
+                <ul>
+                    <li><a href="particles.html">Particles</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">My Own Works ▾</a>
+                <ul>
+                    <li><a href="dream.html">Dream</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
-    </li>
+    </header>
 
-    <li>
-        <a href="#">My Own Works</a>
-        <ul>
-            <li><a href="dream.html">Dream</a></li>
-        </ul>
-    </li>
-</ul>
-	<h1>Dream</h1>
-<h3>This environment is born from a dream layered with another. The idea is simple: owning a CRF 250, being at the beach — a quiet, peaceful place — with a cold drink in hand. The feeling of having a weekend like that, soaking up the sun, the water, playing with a ball, or just lying down listening to the music I grew up with. Or maybe just riding that motorcycle along the shore. It's something I love, and it's what inspired me to bring this scene to life.</h3><br><h3>The idea of not always being stressed out by adult life, of being able to escape from everything that overwhelms you — it's simpler than that. Art has a power: it turns an idea into an expression. You can find that expression almost anywhere — in a photo, a painting, a song, or in something as simple as happiness. And that's what makes me happy.</h3>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <header id="hero-header" style="padding: 20px; text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #FFFFFF; font-size: 2.5rem; text-transform: uppercase;">Dream</h1>
+            <p style="color: #00ADB5; font-weight: 600;">Personal Work / Environment Art</p>
+        </header>
 
-	<iframe title="vimeo-player" src="https://player.vimeo.com/video/1237767643?h=dac8567782" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
-<img src="../media/dream_correct/Inicio.png" width="100%" alt=""/>
+        <!-- VIDEO + HISTORIA INTEGRADA -->
+        <section class="project-showcase" style="max-width: 900px; margin: 0 auto;">
+            <div class="video-wrapper" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); margin-bottom: 30px;">
+                <!-- Cambia TU_ID por el número de tu video en Vimeo -->
+                <iframe src="https://vimeo.com" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+
+            <!-- Aquí está tu historia original con formato limpio -->
+            <div class="project-story" style="background-color: #222831; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                <h2 style="color: #FFFFFF; margin-bottom: 15px; border-bottom: 2px solid #00ADB5; display: inline-block; padding-bottom: 5px;">The Story Behind the Concept</h2>
+                
+                <p style="color: #B2B2B2; font-size: 1.05rem; margin-bottom: 20px; text-align: justify;">
+                    This environment is born from a dream layered with another. The idea is simple: owning a <strong>CRF 250</strong>, being at the beach — a quiet, peaceful place — with a cold drink in hand. The feeling of having a weekend like that, soaking up the sun, the water, playing with a ball, or just lying down listening to the music I grew up with. Or maybe just riding that motorcycle along the shore. It's something I love, and it's what inspired me to bring this scene to life.
+                </p>
+                
+                <p style="color: #B2B2B2; font-size: 1.05rem; text-align: justify;">
+                    The idea of not always being stressed out by adult life, of being able to escape from everything that overwhelms you — it's simpler than that. <strong>Art has a power: it turns an idea into an expression.</strong> You can find that expression almost anywhere — in a photo, a painting, a song, or in something as simple as happiness. And that's what makes me happy.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Jesus Villaseñor - Environment Artist</p>
+    </footer>
 
 </body>
-
 </html>
-
