@@ -8,36 +8,39 @@
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Ruta adaptada apuntando a tu carpeta css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- MENÚ EN LA PARTE SUPERIOR (Fijo para fácil acceso) -->
+    <!-- MENÚ EN LA PARTE SUPERIOR (Fijo y adaptativo) -->
     <header id="header-nav">
         <ul class="menu">
-            <li><a href="#about">About</a></li>
+            <li><a href="#hero-header">About</a></li>
             <li>
                 <a href="#">University Works ▾</a>
                 <ul>
-                    <li><a href="#particles">Particles</a></li>
+                    <li><a href="particles.html">Particles</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">My Own Works ▾</a>
                 <ul>
-                    <li><a href="#dream">Dream</a></li>
+                    <li><a href="dream.html">Dream</a></li>
                 </ul>
             </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
-    <!-- SECCIÓN PRINCIPAL / REEL -->
+    <!-- CONTENEDOR PRINCIPAL -->
     <main class="container">
+        
+        <!-- SECCIÓN DE PERFIL -->
         <header id="hero-header">
             <div class="profile-box">
-                <!-- Tu foto de perfil va aquí -->
-                <img src="media/tu_foto.png" alt="Jesus Villaseñor" class="profile-img">
+                <!-- Se usa tu fondo como marcador temporal para evitar texto encimado -->
+                <img src="media/1bg_web.png" alt="JV" class="profile-img">
                 <div class="profile-text">
                     <h1>Jesus Villaseñor Franco</h1>
                     <h3>Environment Artist</h3>
@@ -51,7 +54,7 @@
             <!-- PROYECTO 1: DREAM -->
             <div id="dream" class="project-card">
                 <div class="video-wrapper">
-                    <!-- Parámetros añadidos (?title=0&byline=0&portrait=0) para ocultar textos nativos de Vimeo -->
+                    <!-- Tu video de Dream con parámetros para ocultar títulos nativos -->
                     <iframe src="https://vimeo.com" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
@@ -63,6 +66,7 @@
             <!-- PROYECTO 2: PARTICLES -->
             <div id="particles" class="project-card">
                 <div class="video-wrapper">
+                    <!-- Tu video de Particles con parámetros para ocultar títulos nativos -->
                     <iframe src="https://vimeo.com" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
@@ -91,9 +95,9 @@
     <footer id="contact">
         <p>© 2026 Jesus Villaseñor - Environment Artist</p>
         <div class="social-links">
-            <a href="TU_LINKEDIN_AQUI" target="_blank">
-                <img src="media/linkedin_icon.png" alt="LinkedIn" class="linkedin-icon">
-            </div>
+            <a href="#" target="_blank">
+                <img src="media/linkedin_icon.png" alt="LinkedIn" class="linkedin-icon" style="width: 35px; opacity: 0.7;">
+            </a>
         </div>
     </footer>
 
